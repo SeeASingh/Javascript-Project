@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: black;
+            color: lime;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            margin-bottom: 20px;
+            font-size: 2.5rem;
+        }
+        .clock {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+        }
+        .clock span {
+            padding: 20px;
+            margin: 0 5px;
+            background-color: rgba(2, 45, 80, 0.8);
+            border-radius: 20px;
+            box-shadow: 0 0 10px lime;
+        }
+    </style>
+</head>
+<body>
+    <h1>Digital Clock</h1>
+    <div class="clock"></div>
+    <script src="./Digitalclock.js"></script>
+</body>
+</html>

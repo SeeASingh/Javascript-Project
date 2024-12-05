@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Expense Tracker</title>
+</head>
+<body>
+<header>
+    <h1>Expense Tracker</h1>
+</header>
+<div class="container">
+    <h4>Your Balance</h4>
+    <h1 id="balance">$0.00</h1>
+    <div class="incomeRemove hidden">
+        <h4>Income</h4>
+        <p class="plus">+$0.00</p>
+    </div>
+    <div class="exp-in">
+        <div class="expRemove hidden">
+            <h4>Expense</h4>
+            <p class="plus">+$0.00</p>
+        </div>
+        <button class="expense">Expense</button>
+        <button class="income">Income</button>
+    </div>
+    <h3>Add New Transaction</h3>
+    <form class="form">
+        <div>
+            <label for="text" class="text">Name:</label><br>
+            <input type="text" id="text" placeholder="Name of Transaction">
+        </div>
+        <div>
+            <label for="amount" class="amount">Amount:</label><br>
+            <input type="number" id="amount" placeholder="Amount">
+        </div>
+        <button type="submit" class="btns">
+            <i class="fa-solid fa-plus"></i>
+        </button>
+    </form>
+    <h3>History</h3>
+    <ul id="list">
+        <li>Food <span>-20</span></li>
+    </ul>
+</div>
+<script src="./script.js"></script>
+</body>
+</html>

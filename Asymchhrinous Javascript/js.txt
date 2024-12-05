@@ -1,0 +1,9 @@
+ Asynchronous Javascript handle time-consuming tasks such  as network request and database qulity 
+
+ in synchronous programming ,each task is excutec one after the other in a sequentail manner.
+
+ console.log("start")
+ console.log("step1")
+ console.log("step2")
+ console.log("step3")
+ console.log("end")
